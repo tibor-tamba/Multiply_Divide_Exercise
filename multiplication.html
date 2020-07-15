@@ -183,6 +183,7 @@
 		function Display() {
 			document.getElementById("label_LessonCount").innerHTML = "Feladat: "+CurrentLesson+"/"+LessonCount;
 			document.getElementById("Inputbox").innerHTML = InputStr;
+			document.getElementById("label_CurrentLesson").innerHTML = "_ x _ = _";
 		}
 		function ResetPage(){
 			InputNum = 1;
@@ -330,7 +331,7 @@
 			var Good = GoodAnswers/LessonCount;
 			var Bad = BadAnswers/LessonCount;
 			var Timedout = TimeoutAnswers/LessonCount;
-			ctx.fillStyle = "#FFFDB9";
+			ctx.fillStyle = "#c8f0ee";
 			ctx.fillRect(0,0,canvas.width,canvas.height);
 			ctx.beginPath();
 			ctx.strokeStyle = "#3e8e41";
@@ -338,7 +339,7 @@
 			ctx.arc(150,150,70,0,Math.PI/180*360*Good);
 			ctx.stroke();	
 			ctx.beginPath();
-			ctx.strokeStyle = "#FF0000";
+			ctx.strokeStyle = "#ca6060";
 			ctx.lineWidth = 135;
 			ctx.arc(150,150,70,Math.PI/180*360*Good,Math.PI/180*360*(Good+Bad));
 			ctx.stroke();	

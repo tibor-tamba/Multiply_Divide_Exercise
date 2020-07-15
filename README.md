@@ -1,4 +1,4 @@
-# Multiplicotion and Division Exercise programs
+# Multiplication and Division Exercise programs
 
 These programs are allow to exercise the multiplying and dividing.
 Primarily the programs has written for elementary school students.

@@ -183,7 +183,6 @@
 		function Display() {
 			document.getElementById("label_LessonCount").innerHTML = "Feladat: "+CurrentLesson+"/"+LessonCount;
 			document.getElementById("Inputbox").innerHTML = InputStr;
-			document.getElementById("label_CurrentLesson").innerHTML = "_ x _ = _";
 		}
 		function ResetPage(){
 			InputNum = 1;
@@ -327,6 +326,7 @@
 		{
 			var canvas = document.getElementById("diagramcanvas");
 			document.getElementById("diagramcanvas").style.display = "initial";
+			document.getElementById("label_CurrentLesson").innerHTML = "_ x _ = _";
 			var ctx = canvas.getContext("2d");
 			var Good = GoodAnswers/LessonCount;
 			var Bad = BadAnswers/LessonCount;

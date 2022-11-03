@@ -69,7 +69,7 @@
 			var Number2 = 1;
 			var CurrentLesson = 0;
 			var ResetLessonsAfter = 63;
-			var TimerInterval = 50; // x100 ms
+			var TimerInterval = 50; // x 100 ms
 			var LessonCount = 10;
 			var NumRange = 10; // 0-1 * (Generate numbers within this range - 2) + 2 Example: NumRange=10 means 2-9
 			var GoodAnswers = 0;
@@ -228,7 +228,7 @@
 			function LessonTimer() {
 			var elem = document.getElementById("myBar");   
 			ProgBarWidth = 100;
-			var id = setInterval(frame, TimerInterval); // x100 ms
+			var id = setInterval(frame, TimerInterval); // x 100 ms
 				function frame() {
 					if (ProgBarWidth == 1) {
 					TimeoutAnswers++;
